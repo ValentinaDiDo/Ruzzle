@@ -1,0 +1,26 @@
+INPUT PROBLEMA:
+	- Stringa da riconoscere "parola":
+	- Contenuto della board creato dal metodo reset
+	- Posizione prima lettera così evito di controllare tutta la matrice
+	
+SOLUZIONE PARZIALE:
+	- Una stringa che rappresenta la parte di parola che è stata già riconosciuta
+	- Elenco delle posizioni delle lettere scelte
+	
+SOLUZIONE TOTALE:
+	- La parola riconosciuta per intero
+	- Elenco delle posizioni di tutte le lettere
+	- Livello della ricorsione = numero di caratteri inseriti (o size di parziale)
+	
+CONDIZIONI DI TERMINAZIONE:
+	- Se livello == lunghezza parola da riconoscere
+	- Se viene trovata la parola nel database, termino la ricorsione
+	
+AVVIO DELLA RICORSIONE:
+	- Livello = 1
+	- Parto dalla posizione della prima lettera (se c'è)
+	
+STRUTTURE DATI:
+	- Stringa (parziale)
+	- int livello
+	- List<Pos> (parziale, il percorso)
